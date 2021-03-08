@@ -1,0 +1,685 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+
+    .comment-right {
+        margin-left: initial;
+    }
+
+    .comment-inner-text {
+        margin-bottom: 10px;
+    }
+
+    .comment-date {
+        padding-right: 5px;
+    }
+
+    .comment-inner-text i, .comment-inner-seller-comment i {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .admin-msg-if-not-reply {
+        padding-top: 10px;
+    }
+
+    .payment-icon {
+        width: 44%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    body {
+        padding: 5px;
+    }
+
+    .payment-header {
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .payment-icons .buy_method_btn {
+        width: 29.333333%;
+        margin: 1.666667%;
+        height: auto;
+    }
+
+    .payment-left {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .comment-header {
+        display: block;
+    }
+
+    .back-to-all-items {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .container, .footer, .pagination, .inner-page-login, .promo-warning {
+        width: 100%;
+        margin: 0 auto;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .promo-warning {
+        margin-top: 20px;
+    }
+
+    .navbar ul li {
+        padding-left: 10px;
+    }
+
+    .comodo {
+        /* margin-left: 0; */
+    }
+
+    .site-title {
+        text-align: left;
+    }
+
+    .promocode-table table tr td {
+        white-space: normal;
+    }
+
+    button.load-more, ul.pag-nubmers, .pagination-elements {
+        margin-right: 0;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    .login {
+        padding-top: 10px;
+    }
+
+    .key-date, .key-author, .key-status {
+        padding: 2px 0 2px 0;
+    }
+
+    .key-comment-user, .key-comment-seller {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .key-dialog-header {
+        margin-left: 0;
+    }
+
+    .key-title, .key-invoice {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .key-title {
+        display: block;
+        text-align: right;
+    }
+
+    .unfollow {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .complaint i, .warning i {
+        font-size: 14px;
+    }
+
+    .promocode-check-text, .promocode-check-accept {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .promocode-check-text, .promocode-check-accept {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .promocode-check-text, .promocode-check-accept {
+        margin-bottom: 3px;
+    }
+
+    .buttons-aligned {
+        margin-right: 7px;
+        margin-top: -46px;
+    }
+
+    .discount-check-text, .payment-proceed-button {
+        font-size: 12px;
+    }
+
+    .promocode-block-title, .payment-proceed-title, .discount-block-title {
+        font-size: 14px;
+    }
+
+    .discount-table, .discount-block-check, .promocode-block, .payment-proceed {
+        width: 100%;
+    }
+
+    .payment-icons .buy_method_btn img {
+        margin-left: 0!important;
+        zoom: 70%; }
+
+    .page-header {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    body {
+        padding: 5px;
+    }
+
+    .container, .footer, .pagination, .inner-page-login, .promo-warning {
+        width: 100%;
+        margin: 0 auto;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .header-left {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .navbar, .comodo {
+        display: none;
+    }
+
+    .site-title {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .header-left, .header-right {
+    }
+
+    .user_profile, .user_items_list {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    .promocode-table table tr td {
+        white-space: normal;
+        padding: 0;
+        min-height: 32px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 13px;
+    }
+
+    .promocode-table, .payment-container {
+        padding: 10px;
+    }
+
+    button.load-more, ul.pag-nubmers, .pagination-elements {
+        margin-right: 0;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    .promo-warning {
+        clear: both;
+    }
+
+    .captcha, .login-button {
+        display: block;
+    }
+
+    .captcha {
+        margin-bottom: 10px;
+    }
+
+    .login-captcha {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .captcha img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .login-button {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .input-login-comment {
+        padding: 9px;
+        font-size: 9px;
+    }
+
+    .login {
+        padding-top: 20px;
+    }
+
+    .logo-login {
+        padding-bottom: 10px;
+    }
+
+    input.input-login {
+        text-indent: 0;
+    }
+
+    .warning-login {
+        padding: 10px;
+    }
+
+    .footer {
+        clear: both;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    .promocode-table table tr.table-header th {
+        padding: 5px;
+    }
+
+    .key-date, .key-author, .key-status {
+        padding: 2px 0 2px 0;
+    }
+
+    .key-date:after, .key-author:after {
+        display: none;
+    }
+
+    .key-comment-user, .key-comment-seller {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .msg-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .msg-send {
+        margin-left: initial;
+    }
+
+    .msg-choose-file {
+        flex: 2 1 100px;
+    }
+
+    .msg-choose-file, .msg-send-file, .msg-send {
+        margin-bottom: 10px;
+    }
+
+    .unfollow {
+        display: block;
+        margin: 10px auto 0 auto;
+    }
+
+    .seller_profile, .your_discount {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    .user_info {
+        padding-bottom: 10px;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .key-dialog-header {
+        margin-left: 0;
+    }
+
+    .key-title, .key-invoice {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .msg-send-file {
+        margin-right: 0;
+    }
+
+    .item-info {
+        display: block;
+    }
+
+    .item-seller-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .item-seller-warning-inner, .item-seller-info-inner {
+        min-height: initial;
+    }
+
+    .back-to-all-items {
+        margin-top: 10px;
+        margin-right: 0;
+        text-align: right;
+    }
+
+    .key-title {
+        display: block;
+        text-align: right;
+    }
+
+    .grade-comment {
+        display: block;
+        height: auto;
+    }
+
+    .grade {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .radio-check {
+        display: initial;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .comment-header-text {
+        flex: 0 1 90px;
+    }
+
+    .comment-header {
+        display: block;
+    }
+
+    .comment-dialog {
+        padding: 0;
+    }
+
+    .complaint p, .warning p {
+        flex-direction: column;
+    }
+
+    .complaint i, .warning i {
+        font-size: 14px;
+    }
+
+    .align-vertical {
+        position: inherit;
+        padding-top: 0;
+    }
+
+    span.discount-check-text {
+        padding: 11px 10px 11px 10px;
+        text-align: left;
+        width: auto;
+        margin: -60px 5px 0 0;
+        font-size: 9px;
+    }
+
+    .discount-block-check, .promocode-block, .payment-proceed {
+        width: auto;
+    }
+
+    .payment-header {
+        height: auto;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+        flex-direction: column;
+    }
+
+    .payment-right {
+        font-size: 12px;
+        padding-top: 10px;
+        width: 100px;
+        padding: 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .payment-left {
+        padding: 0 0 10px 0;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1em;
+    }
+
+    .payment-cost {
+        font-size: 16px;
+    }
+
+    .payment-methods-left, .payment-methods-right {
+        padding: 5px;
+        font-size: 12px;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .payment-methods-right {
+        text-align: right;
+    }
+
+    .dropbtn {
+        font-size: 12px!important;
+        text-align: left;
+        align-items: center!important;
+        -webkit-box-orient: horizontal;
+    }
+
+    .payment-icon {
+        padding: 5px;
+    }
+
+    .discount-table {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .promocode-check-text, .promocode-check-accept, .payment-proceed-button, .discount-check-text {
+        padding: 10px 4px 10px 4px;
+        font-size: 10px;
+    }
+
+    .promocode-check-text, .promocode-check-accept {
+        margin-right: 3px;
+    }
+
+    .promocode-block-title, .payment-proceed-title, .discount-block-title, .load-more-payments-methods {
+        font-size: 14px;
+    }
+
+    .load-more-payments-methods {
+        padding: 10px 40px 10px 40px;
+    }
+
+    .buttons-aligned {
+        margin: -40px 3px 0 0;
+    }
+
+    .discount-check, .promocode-check, .payment-check {
+        text-indent: 0;
+        font-size: 12px;
+    }
+
+    .payment-text, .payment-title {
+        font-size: 12px;
+    }
+
+    .payment-text {
+        padding-left: 50px;
+    }
+
+    .payment-icons {
+        margin-top: 10px;
+    }
+
+    .payment-icons .buy_method_btn {
+        width: 43.333333%;
+        margin: 3%;
+        height: auto;
+    }
+
+    .dropdown-content a {
+        font-size: 12px!important;
+        padding: 7px!important;
+    }
+
+    .second-footer-copyright {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-footer-copyright-left {
+        text-align: center;
+    }
+
+    .payment-button-proceed, .payment-button-decline {
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 16px;
+    }
+
+    .payment-buttons {
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .page-header {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .payment-left-green , .payment-left-green i {
+        padding-right: 4px;
+    }
+
+    .payqiwinew {
+        width: 100%;
+        border: 1px solid #2ecc71;
+        border-radius: 5px;
+        background: #fff;
+        margin: 0 auto;
+        height: 290px;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .payqiwileft {
+        width: 100%;
+        margin-top: 15px;
+        height: 70px;
+    }
+
+    .payqiwilogo {
+        width: 100px;
+        margin: 0 auto;
+        height: 70px;
+        background: url(/stylisation/images/logo_QIWI.png)no-repeat;
+        background-size: 70%;
+    }
+
+    .payqiwiright {
+        width: 95%;
+        text-align: center;
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+
+    .payqiwiinfowait {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .payqiwiiconwait {
+        width: 20px;
+        margin-left: 9%;
+        height: 20px;
+        position: absolute;
+        background: url(/stylisation/images/watch.png)no-repeat;
+        background-size: 100%;
+    }
+
+    .payqiwibutton {
+        margin: 0 auto;
+        float: none;
+        /* width: 150px; */
+        /* margin-top: -50px; */
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 430px) {
+    .payqiwiiconwait {
+        width: 20px;
+        margin-left: 14%;
+        height: 20px;
+        position: absolute;
+        background: url(/stylisation/images/watch.png)no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 580px) {
+    .payment-header {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 680px) {
+    .msg-send-file {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .msg-send-file {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .input-field input {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (min-width: 310px) and (max-width: 420px) {
+    .payment-icons .buy_method_btn {
+        /* width: auto; */ /* margin-right: 0; */
+    }
+
+    .payment-icons .buy_method_btn:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .payment-icons .buy_method_btn img {
+        /* max-width: initial !important; */
+        /* max-height: 100% !important; */
+        /* margin-top: 5px; */
+        /* margin-left: 5px !important; */
+        /* background-size: cover; */
+        zoom: 70%; }
+
+    #buy_method17 img {
+        /* width: 50% !important; */
+    }
+}

@@ -1,0 +1,38 @@
+parameters:
+    db.connections.default:
+        host: 127.0.0.1
+        port: 3306
+        database: ~
+        username: ~
+        password: ~
+    db.connections.queue:
+        host: 127.0.0.1
+        port: 3306
+        database: queue
+        username: ~
+        password: ~
+    db.shards.user:
+
+    mailer.host: ~
+    mailer.port: ~
+    mailer.secure: ~
+    mailer.user: ~
+    mailer.pass: ~
+    mailer.smtp_auth: false
+    mailer.sender.email: ~
+    mailer.sender.name: ~
+
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+    graylog.hostname: ~
+    graylog.port: 12201
+
+    app.path: ~
+
+    admin_api_secret: ~
+
+    primepayer.domain: ~
+    primepayer.shopid: ~
+    primepayer.userid: ~
+    primepayer.key: ~
+    primepayer.apikey: ~

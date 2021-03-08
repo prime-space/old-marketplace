@@ -1,0 +1,92 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: en
+
+framework:
+    #esi: ~
+    #translator: { fallbacks: ['%locale%'] }
+    secret: '%secret%'
+    router:
+        resource: '%kernel.root_dir%/config/routing.yml'
+        strict_requirements: ~
+    form: ~
+    csrf_protection: ~
+    validation: { enable_annotations: true }
+    #serializer: { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale: '%locale%'
+    trusted_hosts: ~
+    trusted_proxies: ~
+    session:
+        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+        handler_id:  session.handler.native_file
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+    fragments: ~
+    http_method_override: true
+    assets: ~
+    php_errors:
+        log: true
+
+# Twig Configuration
+twig:
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+
+well_db:
+    logger:
+        id: logger
+        channel: db
+    connections:
+        default: '%db.connections.default%'
+        queue: '%db.connections.queue%'
+    pre_queries:
+        - "SET time_zone = '+3:00'"
+        - "SET lc_time_names = 'ru_RU'"
+    shards:
+
+services:
+    guzzle.client:
+        class: GuzzleHttp\Client
+#    gelf.publisher:
+#        class: Gelf\MessagePublisher
+#        arguments: [%graylog.hostname%, %graylog.port%]
+#    monolog.gelf_handler:
+#        class: Monolog\Handler\GelfHandler
+#        arguments: ['@gelf.publisher']
+#    monolog.processor.web_processor:
+#        class: Monolog\Processor\WebProcessor
+#        tags:
+#            - { name: monolog.processor, method: __invoke }
+
+monolog:
+    handlers:
+        main:
+            type: stream
+            path: '%kernel.logs_dir%/%kernel.environment%.log'
+            level: debug
+            formatter: primearea.logger.global_formatter
+#        gelf:
+#            type: service
+#            id: monolog.gelf_handler
+#            level: debug
+
+mailer:
+    host: '%mailer.host%'
+    port: '%mailer.port%'
+    secure: '%mailer.secure%'
+    user: '%mailer.user%'
+    pass: '%mailer.pass%'
+    smtp_auth: '%mailer.smtp_auth%'
+    sender:
+        email: '%mailer.sender.email%'
+        name: '%mailer.sender.name%'
+
+primearea:
+    app_path: '%app.path%'

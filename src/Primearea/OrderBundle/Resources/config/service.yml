@@ -1,0 +1,8 @@
+services:
+    primearea_order.order_executor:
+        class: Primearea\OrderBundle\OrderExecutor
+        arguments:
+            - '@primearea.port'
+            - '@primearea_order.repository.order'
+        tags:
+            - {name: transaction_executor, type: order}

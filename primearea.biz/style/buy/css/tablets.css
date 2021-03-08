@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container, .footer, .footer-second {
+        width: 730px;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-left, .header-right {
+        width: auto;
+    }
+
+    .navbar ul li {
+        padding-left: 10px;
+    }
+
+    .comodo {
+        margin-left: 10px;
+    }
+
+    .promo-warning {
+        width: 400px;
+    }
+
+    .comment-right {
+        margin-left: 0;
+    }
+}

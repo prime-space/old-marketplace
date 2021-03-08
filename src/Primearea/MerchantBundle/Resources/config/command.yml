@@ -1,0 +1,17 @@
+services:
+    primearea_merchant.qiwi_trunsactions_fetch_command:
+        class: Primearea\MerchantBundle\Command\QiwiTransactionsFetchDaemonCommand
+        arguments:
+            - '@guzzle.client'
+            - '@primearea_merchant.repository.qiwi_input'
+            - '@primearea_merchant.store.qiwi_input'
+            - '@primearea.transaction.executor_provider'
+            - '@primearea.aggregator.qiwi'
+            - '@well.db.client.default'
+            - '@primearea_merchant.repository.transaction'
+            - '@primearea.repository.payment_account'
+            - '@logger'
+        calls:
+            - {method: setTimeout, arguments: [3]}
+        tags:
+            - { name: console.command }

@@ -1,0 +1,8 @@
+services:
+    primearea_merchant.payment.payment_executor:
+        class: Primearea\MerchantBundle\Payment\PaymentExecutor
+        arguments:
+            - '@primearea.port'
+            - '@primearea_merchant.repository.payment'
+        tags:
+            - {name: transaction_executor, type: payment}

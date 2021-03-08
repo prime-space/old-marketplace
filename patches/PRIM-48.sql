@@ -1,0 +1,1 @@
+ALTER TABLE `primearea`.`report_money` ADD UNIQUE `date_isMerchant` (`date`, `isMerchant`);

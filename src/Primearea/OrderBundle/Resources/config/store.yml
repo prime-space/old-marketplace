@@ -1,0 +1,5 @@
+services:
+    primearea_order.store.order:
+        class: Primearea\OrderBundle\Store\OrderStore
+        arguments:
+            - '@well.db.client.default'

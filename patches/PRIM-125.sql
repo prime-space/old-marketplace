@@ -1,0 +1,15 @@
+CREATE TABLE `yandex_output` (
+  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `cashout_id` INT(10) UNSIGNED NOT NULL,
+  `amount` DECIMAL(16,2) UNSIGNED NOT NULL,
+  `fee` DECIMAL(16,2) UNSIGNED NOT NULL,
+  `purse` VARCHAR(50) NOT NULL,
+  `created_ts` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `cashout_id` (`cashout_id`)
+)
+  COLLATE='utf8_general_ci'
+  ENGINE=InnoDB
+;
+ALTER TABLE `cashout`
+  ADD COLUMN `paymentAccountId` INT(10) UNSIGNED NULL DEFAULT NULL AFTER `protect`;

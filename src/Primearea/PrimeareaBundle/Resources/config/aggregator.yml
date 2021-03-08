@@ -1,0 +1,33 @@
+services:
+    primearea.aggregator.aggregator_provider:
+        class: Primearea\PrimeareaBundle\Aggregator\AggregatorProvider
+    primearea.aggregator.qiwi:
+        class: Primearea\PrimeareaBundle\Aggregator\QiwiAggregator
+        arguments:
+            - '@primearea.repository.user'
+            - '@primearea_merchant.repository.qiwi_output'
+            - '@guzzle.client'
+            - '@primearea.payment_account_fetcher'
+            - '@logger'
+        tags:
+            - {name: aggregator, aggregator: qiwi}
+
+    primearea.aggregator.yandex:
+        class: Primearea\PrimeareaBundle\Aggregator\YandexAggregator
+        arguments:
+            - '@primearea.repository.user'
+            - '@primearea.repository.yandex_output'
+            - '@primearea.payment_account_fetcher'
+            - '@logger'
+        tags:
+            - {name: aggregator, aggregator: yandex}
+
+    primearea.aggregator.webmoney:
+        class: Primearea\PrimeareaBundle\Aggregator\WebmoneyAggregator
+        arguments:
+            - '@primearea.repository.user'
+            - '@primearea.repository.webmoney_output'
+            - '@primearea.payment_account_fetcher'
+            - '@logger'
+        tags:
+            - {name: aggregator, aggregator: wm}

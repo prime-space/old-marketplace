@@ -1,0 +1,9 @@
+services:
+    primearea_merchant.store.qiwi_input:
+        class: Primearea\MerchantBundle\Store\QiwiInputStore
+        arguments:
+            - '@well.db.client.default'
+    primearea_merchant.store.payment:
+        class: Primearea\MerchantBundle\Store\PaymentStore
+        arguments:
+            - '@well.db.client.default'

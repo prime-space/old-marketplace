@@ -1,0 +1,17 @@
+services:
+
+    primearea.logger.global_formatter:
+        class: Monolog\Formatter\LineFormatter
+        arguments:
+            - "[%%datetime%%] [%%extra.module%%] %%channel%%.%%level_name%%: %%message%% %%context%% %%extra%%\n"
+
+    primearea.logger.global_processor:
+        class: Primearea\PrimeareaBundle\Logger\GlobalLogProcessor
+        autowire: true
+        arguments:
+            - '@primearea.logger.extra_data_keeper'
+        tags:
+            - { name: monolog.processor, method: processRecord }
+
+    primearea.logger.extra_data_keeper:
+        class: Primearea\PrimeareaBundle\Logger\LogExtraDataKeeper

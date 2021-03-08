@@ -1,0 +1,58 @@
+services:
+    primearea.send_mail_command:
+        class: Primearea\PrimeareaBundle\Command\SendMailCommand
+        arguments:
+            - '@primearea.repository.mail'
+            - '@primearea.store.mail'
+            - '@mailer.postman'
+            - '@logger'
+        tags:
+            - { name: console.command }
+    primearea.withdraw_command:
+        class: Primearea\PrimeareaBundle\Command\WithdrawDaemonCommand
+        arguments:
+            - '@primearea.message_broker'
+            - '@primearea.repository.cashout'
+            - '@primearea.aggregator.aggregator_provider'
+            - '@guzzle.client'
+            - '@well.db.client_provider'
+            - '@primearea.logger.extra_data_keeper'
+            - '@logger'
+            - '%primepayer.domain%'
+            - '%primepayer.userid%'
+            - '%primepayer.apikey%'
+        tags:
+            - { name: console.command }
+    primearea.exec_payment_command:
+        class: Primearea\PrimeareaBundle\Command\ExecPaymentDaemonCommand
+        arguments:
+            - '@primearea.message_broker'
+            - '@well.db.client_provider'
+            - '@primearea.logger.extra_data_keeper'
+            - '@primearea.transaction.executor_provider'
+            - '@logger'
+        tags:
+            - { name: console.command }
+    primearea.qiwi_transactions_reexec_command:
+        class: Primearea\PrimeareaBundle\Command\QiwiTransactionsReexec
+        arguments:
+            - '@guzzle.client'
+            - '@primearea.transaction.executor_provider'
+            - '@primearea_merchant.store.qiwi_input'
+            - '@primearea.aggregator.qiwi'
+            - '@well.db.client.default'
+            - '@primearea_merchant.repository.transaction'
+            - '@primearea.repository.payment_account'
+        tags:
+            - { name: console.command }
+    primearea.fetch_payout_statuses_command:
+        class: Primearea\PrimeareaBundle\Command\FetchPayoutStatusesCommand
+        arguments:
+            - '@guzzle.client'
+            - '@logger'
+            - '%primepayer.domain%'
+            - '%primepayer.userid%'
+            - '%primepayer.apikey%'
+            - '@primearea.repository.cashout'
+        tags:
+            - { name: console.command }

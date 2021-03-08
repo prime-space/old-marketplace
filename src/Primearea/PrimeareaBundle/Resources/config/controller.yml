@@ -1,0 +1,11 @@
+services:
+    primearea.controller.metric:
+        class: Primearea\PrimeareaBundle\Controller\MetricController
+        arguments:
+            - '@primearea.repository.metric'
+
+    primearea.controller.admin_api:
+        class: Primearea\PrimeareaBundle\Controller\AdminApiController
+        arguments:
+            - '@primearea.admin_api'
+            - '%admin_api_secret%'

@@ -1,0 +1,545 @@
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.table > tbody > tr.table_pagination > td,.table > tbody > tr.tableAddMy > td {
+    border-bottom: 0;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    vertical-align: top;
+    border-bottom: 1px dashed #DBDBDB;
+}
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px dashed #DBDBDB;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+.table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+.table .table {
+    background-color: #ffffff;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+    padding: 5px;
+}
+.table-bordered {
+    border: 1px solid #dddddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+    border: 1px solid #dddddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+    border-bottom-width: 2px;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+    position: static;
+    float: none;
+    display: table-column;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+    position: static;
+    float: none;
+    display: table-cell;
+}
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+    background-color: #f5f5f5;
+}
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr:hover > .active,
+.table-hover > tbody > tr.active:hover > th {
+    background-color: #e8e8e8;
+}
+.table > thead > tr > td.success,
+.table > tbody > tr > td.success,
+.table > tfoot > tr > td.success,
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th {
+    background-color: #dff0d8;
+}
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td,
+.table-hover > tbody > tr:hover > .success,
+.table-hover > tbody > tr.success:hover > th {
+    background-color: #d0e9c6;
+}
+.table > thead > tr > td.info,
+.table > tbody > tr > td.info,
+.table > tfoot > tr > td.info,
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th {
+    background-color: #d9edf7;
+}
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr:hover > .info,
+.table-hover > tbody > tr.info:hover > th {
+    background-color: #c4e3f3;
+}
+.table > tbody > tr > td.new {
+    background-color: #d9edf7;
+}
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
+    background-color: #fcf8e3;
+}
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr:hover > .warning,
+.table-hover > tbody > tr.warning:hover > th {
+    background-color: #faf2cc;
+}
+.table > tbody > tr > td.pending {
+    background-color: #fcf8e3;
+}
+.table > thead > tr > td.danger,
+.table > tbody > tr > td.danger,
+.table > tfoot > tr > td.danger,
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+    background-color: #f2dede;
+}
+.table-hover > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td,
+.table-hover > tbody > tr:hover > .danger,
+.table-hover > tbody > tr.danger:hover > th {
+    background-color: #ebcccc;
+}
+.table > tbody > tr > td.fail {
+    background-color: #f2dede;
+}
+.table-hover > tbody > tr > td.fail:hover,
+.table-hover > tbody > tr > th.fail:hover,
+.table-hover > tbody > tr.fail:hover > td,
+.table-hover > tbody > tr:hover > .fail,
+.table-hover > tbody > tr.fail:hover > th {
+    background-color: #ebcccc;
+}
+/********************/
+
+.table_page {
+    background: #ffffff;
+    margin-bottom: 0;
+}
+.table_page > thead > tr {
+    background-color: #404040;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.table_page thead > tr > td {
+    padding: 10px 20px;
+    vertical-align: middle;
+}
+
+/********************/
+
+.table_page_z > thead > tr {
+    background-color: #27AE60;
+    color: #ffffff;
+}
+
+/********************/
+
+.table_page_b {
+    border-left: 1px dashed #DBDBDB;
+}
+.table_page_b > thead > tr {
+    border-bottom: 1px dashed #DBDBDB;
+}
+.table_page_b > thead > tr,
+.table_page_b > tbody > tr {
+    border-top: 1px dashed #DBDBDB;
+}
+.table_page_b > thead > tr > td,
+.table_page_b > tbody > tr > td,
+.table_page_b > tfoot > tr > td {
+    border-right: 1px dashed #DBDBDB;
+}
+.table_page_b > thead > tr > td:last-child,
+.table_page_b > tbody > tr > td:last-child,
+.table_page_b > tfoot > tr > td:last-child {
+    border-bottom: 1px dashed #DBDBDB;
+}
+
+/********************/
+
+.btn_tabs_content {
+    display: none;
+}
+.btn_tabs_content.active {
+    display: table;
+}
+
+/********************/
+
+.table_lot {
+    background: -moz-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 100%);
+    margin: 0;
+}
+.table_lot > thead > tr {
+    background-color: #404040;
+    color: #ffffff;
+    text-align: left;
+}
+.table_lot > thead > tr th {
+    border-bottom: 0 dashed #DBDBDB;
+}
+.table_lot > thead > tr th {
+    text-align: left;
+    vertical-align: middle;
+    height: 35px;
+}
+.table_lot > thead > tr th.table_name {
+    padding: 0 0 0 10px;
+}
+.table_lot > thead > tr th.table_discount {
+    width: 45px;
+}
+.table_lot > thead > tr th.table_seller {
+    width: 90px;
+}
+.table_lot > thead > tr th.table_rating {
+    width: 90px;
+}
+.table_lot > thead > tr th.table_sales {
+    width: 90px;
+}
+.table_lot > thead > tr th.table_price {
+    width: 90px;
+}
+.table_lot > thead > tr th.table_name_r {
+    padding: 0 10px;
+    width: 270px;
+}
+.table_lot > thead > tr th.table_date {
+    text-align: center;
+    width: 90px;
+}
+.table_lot > thead > tr th.table_review {
+    padding: 0 10px;
+    width: 260px;
+}
+.table_lot > thead > tr th.table_saler {
+    padding: 0 10px;
+    width: 260px;
+}
+
+/********************/
+
+.table.table_page_popup {
+    background: #ffffff;
+    color: #000000;
+    margin-bottom: 0;
+}
+.table.table_page_popup > thead > tr {
+    background-color: #404040;
+    color: #ffffff;
+}
+.table.table_page_popup > thead > tr > td {
+    font-size: 12px;
+    padding: 5px 5px;
+    vertical-align: middle;
+}
+.table.table_page_popup > tbody > tr > td {
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+}
+.table.table_page_popup > tbody > tr > td > form {
+    display: block;
+}
+.table.table_page_popup > tbody > tr > td > form > input {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    width: 40px;
+}
+
+/********************/
+
+.table.table_page_input1 input[type="text"],
+.table.table_page_input1 input[type="password"] {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+/********************/
+.table > thead > tr > td.font_size_12,
+.table > tbody > tr > td.font_size_12,
+.table > tfoot > tr > td.font_size_12 {
+    font-size: 12px;
+    line-height: 14px;
+}
+.table > thead > tr > td.font_size_14,
+.table > tbody > tr > td.font_size_14,
+.table > tfoot > tr > td.font_size_14 {
+    font-size: 14px;
+    line-height: 18px;
+}
+.table > thead > tr > td.vertical_align,
+.table > tbody > tr > td.vertical_align,
+.table > tfoot > tr > td.vertical_align {
+    vertical-align: middle;
+}
+.table > thead > tr > td.font_weight_700,
+.table > tbody > tr > td.font_weight_700,
+.table > tfoot > tr > td.font_weight_700 {
+    font-weight: 700;
+}
+.table > thead > tr > td.padding_r_0,
+.table > tfoot > tr > td.padding_r_0 {
+    padding-right: 0;
+}
+.table > thead > tr > td.padding_l_0,
+.table > tfoot > tr > td.padding_l_0 {
+    padding-left: 0;
+}
+.table > thead > tr > td.padding_5,
+.table > tbody > tr > td.padding_5,
+.table > tfoot > tr > td.padding_5 {
+    padding: 5px;
+}
+.table > thead > tr > td.padding_t_5,
+.table > tbody > tr > td.padding_t_5,
+.table > tfoot > tr > td.padding_t_5 {
+    padding-top: 5px;
+}
+.table > thead > tr > td.padding_r_5,
+.table > tbody > tr > td.padding_r_5,
+.table > tfoot > tr > td.padding_r_5 {
+    padding-right: 5px;
+}
+.table > thead > tr > td.padding_b_5,
+.table > tbody > tr > td.padding_b_5,
+.table > tfoot > tr > td.padding_b_5 {
+    padding-bottom: 5px;
+}
+.table > thead > tr > td.padding_l_5,
+.table > tbody > tr > td.padding_l_5,
+.table > tfoot > tr > td.padding_l_5 {
+    padding-left: 5px;
+}
+.table > thead > tr > td.padding_10,
+.table > tbody > tr > td.padding_10,
+.table > tfoot > tr > td.padding_10 {
+    padding: 10px;
+}
+.table > thead > tr > td.padding_t_10,
+.table > tbody > tr > td.padding_t_10,
+.table > tfoot > tr > td.padding_t_10 {
+    padding-top: 10px;
+}
+.table > thead > tr > td.padding_r_10,
+.table > tbody > tr > td.padding_r_10,
+.table > tfoot > tr > td.padding_r_10 {
+    padding-right: 10px;
+}
+.table > thead > tr > td.padding_b_10,
+.table > tbody > tr > td.padding_b_10,
+.table > tfoot > tr > td.padding_b_10 {
+    padding-bottom: 10px;
+}
+.table > thead > tr > td.padding_l_10,
+.table > tbody > tr > td.padding_l_10,
+.table > tfoot > tr > td.padding_l_10 {
+    padding-left: 10px;
+}
+.table > thead > tr > td.text_align_c,
+.table > tbody > tr > td.text_align_c,
+.table > tfoot > tr > td.text_align_c {
+    text-align: center;
+}
+.table > thead > tr > td.text_align_l,
+.table > tbody > tr > td.text_align_l,
+.table > tfoot > tr > td.text_align_l {
+    text-align: left;
+}
+.table > thead > tr > td.text_align_r,
+.table > tbody > tr > td.text_align_r,
+.table > tfoot > tr > td.text_align_r {
+    text-align: right;
+}
+.table > thead > tr > td.bg_red,
+.table > tbody > tr > td.bg_red,
+.table > tbody > tr.bg_red,
+.table > tfoot > tr > td.bg_red,
+.table > tfoot > tr.bg_red {
+    background-color: #FFEBEB;
+}
+.table > thead > tr > td.bg_green,
+.table > tbody > tr > td.bg_green,
+.table > tbody > tr.bg_green,
+.table > tfoot > tr > td.bg_green,
+.table > tfoot > tr.bg_green {
+    background-color: #EBFFED;
+}
+.table > thead > tr > td.bg_blye,
+.table > tbody > tr > td.bg_blye,
+.table > tbody > tr.bg_blye,
+.table > tfoot > tr > td.bg_blye,
+.table > tfoot > tr.bg_blye {
+    background-color: #EBF8FF;
+}
+.table > thead > tr > td.text_url a,
+.table > tbody > tr > td.text_url a,
+.table > tbody > tr.text_url a,
+.table > tfoot > tr > td.text_url a,
+.table > tfoot > tr.text_url a {
+    display: block;
+}
+/**********************/
+td.select_style_100 .jq-selectbox.jqselect,
+td.select_style_120 .jq-selectbox.jqselect,
+td.select_style_150 .jq-selectbox.jqselect {
+    margin-right: 5px;
+}
+td.select_style_100 .jq-selectbox.jqselect:last-child,
+td.select_style_120 .jq-selectbox.jqselect:last-child,
+td.select_style_150 .jq-selectbox.jqselect:last-child {
+    margin: 0;
+}
+td.select_style_100 .jq-selectbox.jqselect .select {
+    width: 100px;
+}
+td.select_style_120 .jq-selectbox.jqselect .select {
+    width: 120px;
+}
+td.select_style_150 .jq-selectbox.jqselect .select {
+    width: 150px;
+}
+
+td.td_img img {
+}
+/**********************/
+.table.table_tabs {
+    display: none;
+}
+.table.table_tabs.active {
+    display: table;
+}
+/**********************/
+.table.table_span_bg > tbody > tr > td > span.span_bgR {
+    background: #E8E8E8;
+    color: #27AE60;
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+    line-height: 43px;
+    margin: 5px;
+    padding: 10px;
+    vertical-align: middle;
+    height: 43px;
+}
+.table.table_span_bg > tbody > tr > td {
+    border-top: 0 dashed transparent;
+}
+.table.table_span_bg > tbody > tr > td > span.span_bgR .select {
+    width: 150px;
+}
+.table.table_span_bg > tbody > tr > td > span.span_bgR img {
+    vertical-align: middle;
+}
+/*********************/
+.table_break_word > tbody > tr > td {
+    word-break: break-word;
+    word-wrap: break-word;
+}
+/*********************/
+td.new {
+    color: #356780;
+}
+td.pending {
+    color: #8B8042;
+}
+td.success {
+    color: #44792D;
+}
+td.fail {
+    color: #934E4E;
+}

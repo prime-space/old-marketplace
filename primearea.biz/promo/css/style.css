@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+h2, h3 {color: #fff}
+.navbarprime {
+ background-color: #333;
+}
+.navbarprime a {
+ color: #fff;
+}
+.navbarprime a:focus {
+ background-color: transparent!important; 
+}
+.navbarprime a:hover {
+ background-color: transparent!important; 
+ color: #3498db!important; 
+}
+.navbar {
+ background-color: transparent;
+ background: transparent;
+ border-width: 0px;
+}
+.navbar-brand:hover {border-bottom: none!important}
+.logobar {margin-top: -5px;}
+.textstyle {
+ padding-bottom: 50px;
+ padding-top: 50px;
+}
+.borderwidth {
+ border: 1px solid black;
+ padding: 10px;
+ border-radius: 5px;
+ background: #ecf0f1;
+}
+.buttonstart {
+border: 2px solid #fff;
+border-radius: 5px;
+padding: 15px;
+color: #fff;
+}
+.buttonstart:hover {
+ color: #000; 
+ text-decoration: none; 
+ border-color: green;
+ background: white;
+ transition: 0.5s;
+}
+.buttonstart:focus {color: #fff}
+.buttonstart:active {background: #000}
+.buttonmargin {margin-top: 0;}
+
+@media screen and (max-width: 450px) {
+   .textadaptive {
+     font-size: 16px;
+     
+   }
+}
+
+.carousel-caption {top: 40%;}
+@media screen and (max-width: 520px) {
+   .carousel-caption {
+     margin-top: -90px;
+   }
+}
+
+
+@media screen and (min-width: 668px) and (max-width: 1024px) { 
+     .carousel-caption {
+     margin-top: -100px; 
+   }
+}
+
+@media screen and (min-width: 428px) and (max-width: 668px) { 
+     .carousel-caption, .carousel-caption a {
+     margin-top: -100px; 
+   }
+}
+
+
+@media screen and (min-width: 428px) and (max-width: 668px) { 
+     .textadaptive {
+     margin-top: 22px;
+     font-size: 22px;
+   }
+}
+
+
+@media screen and (max-width: 450px) { 
+     .slidertextsize {
+     font-size: 8px!important; 
+   }
+}
+
+
+@media screen and (max-width: 450px) { 
+   .textmargin1 {
+   font-size: 14px!important;
+   padding-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 420px) { 
+    .textmargin2 {
+    text-align: 6px;
+   }
+}
+
+.ourpayments {
+ padding-top: 50px;
+ padding-bottom: 50px;
+ margin-bottom: 50px;
+ background: -moz-linear-gradient(90deg, #42b574 0%, #84c450 100%);
+ background: -webkit-linear-gradient(90deg, #42b574 0%, #84c450 100%);
+ background: -o-linear-gradient(90deg, #42b574 0%, #84c450 100%);
+ background: -ms-linear-gradient(90deg, #42b574 0%, #84c450 100%);
+ background: linear-gradient(90deg, #42b574 0%, #84c450 100%);
+}
+
+.colorwhite {
+ color: #fff;   
+}
+
+@media screen and (max-width: 520px) {
+   .colorwhite {
+       font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .textxs {
+       text-align: center;
+   }
+}
+
+@media screen and (max-width: 868px) {
+   .textxssecond {
+       text-align: center;
+       padding-bottom: 50px; 
+   }
+}
+
+@media screen and (max-width: 868px) {
+   .marginbuttonright {
+       float: none!important;
+       margin: 0 auto;
+       display: block;
+       width: 200px;
+   }
+}
+
+@media screen and (max-width: 868px) {
+   .bottommargin {
+      padding: 0!important; 
+   }
+}
+
+
+.startpayments {
+background: #191919 url(../images/bg.png); 
+height: 100px; 
+margin-top: 50px;
+padding-bottom: 130px; 
+}
+
+.startpaymentsafter {fill: #55bbeb;background: #55bbeb;background: -moz-linear-gradient(90deg, #55bbeb 0%, #84c450 100%);background: -webkit-linear-gradient(90deg, #55bbeb 0%, #84c450 100%);background: -o-linear-gradient(90deg, #55bbeb 0%, #84c450 100%);background: -ms-linear-gradient(90deg, #55bbeb 0%, #84c450 100%);background: linear-gradient(90deg, #55bbeb 0%, #84c450 100%);min-height: 100px;padding-top: 50px;padding-bottom: 50px;}
+
+.startpaymentend {
+  background: -moz-linear-gradient(90deg, #8668ad 0%, #55bbeb 100%);
+  background: -webkit-linear-gradient(90deg, #8668ad 0%, #55bbeb 100%);
+  background: -o-linear-gradient(90deg, #8668ad 0%, #55bbeb 100%);
+  background: -ms-linear-gradient(90deg, #8668ad 0%, #55bbeb 100%);
+  background: linear-gradient(90deg, #8668ad 0%, #55bbeb 100%);
+  padding-bottom: 40px;
+  padding-top: 40px;
+ }
+
+.startpaymentsbtn {
+ color: #fff;
+ border: 2px solid #fff;
+ border-radius: 5px;
+ padding-top: 15px;
+ padding-bottom: 15px;
+ text-align: center;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+
+.startpaymentsbtn:hover {
+ color: #fff;
+ text-decoration: none;
+}
+
+.startpaymentsbtnmargin {
+ padding-top: 50px;   
+}
+
+.marginbuttonright {margin-top: -20px; float: right}
+.textxssecond {padding-top: 20px}
+.icon {
+ background-image: url(../images/icon.png);
+ height: 32px;
+ background-repeat: no-repeat;
+ padding-left: 40px;
+ padding-top: 5px;
+}
+
+.partners {background-color: #212121;padding-bottom: 100px;}
+.partnerspadding {color:#fff; padding-top:100px}
+.sp {
+ color: greenyellow;
+ height: 2px;
+ width: 50px; 
+}
+
+.bottommargin {padding-top: 90px;}
+.bottommarginimg {
+ margin-top: 110px!important;
+}
+
+.innertext {padding-left: 40px;padding-top: 20px;}
+
+.margincart {margin-right: 10px}
+
+.carousel-inner {margin-top: 50px!important}
+
+.introtext {
+ text-align: center;
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+
+.btncenter {
+ margin: 0 auto;
+ display: block!important;
+}
+
+.btnmargin {
+ /* margin-top: 30px!important; */
+}
+
+.textcolorfooter {color: #fff}
+
+
+#popup {
+display: none;
+}
+
+@media screen and (max-width: 768px) {
+   .startpaymentsafter {
+    margin-top: 20px; 
+   }
+}
+
+.copymargin {margin-top: 80px}

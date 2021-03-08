@@ -1,0 +1,110 @@
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+<IfModule mod_php5.c>
+ php_value error_reporting 1
+</IfModule>
+
+RewriteEngine On
+
+#for only primearea.biz
+#RewriteCond %{HTTP_HOST} ^primearea.biz$
+#RewriteCond %{HTTPS} !on
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+#for http auth on steamsells.ru
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_HOST} ^steamsells.ru$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+
+#steamsells redirect from www to non www
+RewriteCond %{HTTP_HOST} ^www.steamsells.ru [NC]
+RewriteRule ^(.*)$ http://steamsells.ru/$1 [L,R=301]
+
+RedirectMatch ^/modules/wmx2/(.*)$ https://primearea.biz/error404/
+RedirectMatch ^/upload/(.*)$ https://primearea.biz/error404/
+
+ErrorDocument 403 https://primearea.biz/error404/
+ErrorDocument 404 https://primearea.biz/error404/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule \.(jpg|gif|png)$ stylisation/images/no_image.$1 [L]
+
+RewriteRule ^main/([0-9]{1,11})(/?)+$ index.php?p=main&n=$1 [L]
+RewriteRule ^activation/([a-z0-9]{0,64})/([a-z0-9]{0,64})$ index.php?p=activation&h=$1&i=$2 [L]
+RewriteRule ^recover(/?)$ index.php?p=recover [L]
+RewriteRule ^getYandexToken(/?)$ index.php?p=getYandexToken [L]
+RewriteRule ^reset/([a-z0-9]{0,64})/([a-z0-9]{0,64})$ index.php?p=reset&h=$1&i=$2 [L]
+RewriteRule ^api(.*)+$ api.php [L]
+RewriteRule ^customer/([a-z0-9]{64,128})(/?)+$ index.php?p=customer&h=$1 [L]
+RewriteRule ^addmoney/success/([a-z0-9]{0,512})(/[a-z0-9]{0,512})+$ index.php?p=panel&sp=addmoney_success [L]
+RewriteRule ^customer/([0-9]{1,11})/([a-z0-9]{64,128})(/?)+$ index.php?p=customer&h=$2&i=$1 [L]
+RewriteRule ^customer/promocodes(/([a-z0-9]{64,128}))?(/?)+$ index.php?p=customer&sp=promocodes&h=$2 [L]
+RewriteRule ^customer/unsubscribe(/([a-z0-9]{64,128}))?(/?)+$ index.php?p=customer&sp=unsubscribe&h=$2 [L]
+RewriteRule ^customer/([0-9]{1,11})/messages/([a-z0-9]{64,128})(/?)+$ index.php?p=customer&sp=messages&h=$2&i=$1 [L]
+
+RewriteRule ^checkpromocode/([a-zA-Z0-9]{16})(/?)+$ index.php?p=checkpromocode&code=$1 [L]
+
+RewriteRule ^download/([0-9]{1,11})(/([a-z0-9]{64}))?(/?)+$ download.php?i=$1&h=$3 [L]
+
+RewriteRule ^category/([a-z0-9\-]+)/([a-z0-9\-]+)/([a-z0-9\-]+)(/?)+$ index.php?p=category&a=$1&b=$2&c=$3 [L]
+RewriteRule ^product/([0-9]{1,11})(/?)+$ index.php?p=showproduct&productid=$1 [L]
+RewriteRule ^seller/([0-9]{1,11})(/?)+$ index.php?p=sellershow&sellerid=$1 [L]
+RewriteRule ^link/([0-9]{1,11})(/?)+$ /modules/recommended/link.php?id=$1 [L]
+RewriteRule ^signout(/?)+$ /modules/login/signout.php [L]
+
+RewriteRule ^buy/([0-9]{1,11})(/([0-9]{1,11}))?(/?)+$ index.php?p=buy&productid=$1&partner=$3 [L]
+RewriteRule ^buy/([0-9]{1,11})(/([0-9]{1,11}))?/([a-zA-Z0-9@\.\-_]{5,32})(/?)+$ index.php?p=buy&productid=$1&partner=$3&email=$4 [L]
+
+RewriteRule ^panel/myshop(/?)+$ index.php?p=panel&sp=myshop [L]
+RewriteRule ^panel/productadd(/?)+$ index.php?p=panel&sp=productadd [L]
+RewriteRule ^panel/productedit/([0-9]{1,11})(/?)+$ index.php?p=panel&sp=productedit&id=$1 [L]
+RewriteRule ^panel/productobj/(edit|add|multi|simple)/([0-9]{1,11})(/?)+$ index.php?p=panel&sp=productobj&method=$1&id=$2 [L]
+RewriteRule ^panel/currencies(/?)+$ index.php?p=panel&sp=currencies [L]
+RewriteRule ^panel/cabinet(/?)+$ index.php?p=panel&sp=cabinet [L]
+RewriteRule ^panel/cashout(/?)+$ index.php?p=panel&sp=cashout [L]
+RewriteRule ^panel/review(/?)+$ index.php?p=panel&sp=review [L]
+RewriteRule ^panel/blacklist(/?)+$ index.php?p=panel&sp=blacklist [L]
+RewriteRule ^panel/discount(/?)+$ index.php?p=panel&sp=discount [L]
+RewriteRule ^panel/shopsite(/?)+$ index.php?p=panel&sp=shopsite [L]
+RewriteRule ^panel/recommended(/?)+$ index.php?p=panel&sp=recommended [L]
+RewriteRule ^panel/addmoney(/?)+$ index.php?p=panel&sp=addmoney [L]
+RewriteRule ^panel/group(/?)+$ index.php?p=panel&sp=group [L]
+RewriteRule ^panel/bookkeeping(/?)+$ index.php?p=panel&sp=bookkeeping [L]
+RewriteRule ^panel/order(/?)+$ index.php?p=panel&sp=order [L]
+RewriteRule ^panel/reviewdelete(/?)+$ index.php?p=panel&sp=reviewdelete [L]
+RewriteRule ^panel/newproducts(/?)+$ index.php?p=panel&sp=newproducts [L]
+RewriteRule ^panel/moderate(/?)+$ index.php?p=panel&sp=moderate [L]
+RewriteRule ^panel/moderate/([0-9]{1,11})(/?)+$ index.php?p=panel&sp=moderate&id=$1 [L]
+RewriteRule ^panel/newusers(/?)+$ index.php?p=panel&sp=newusers [L]
+RewriteRule ^panel/api(/?)+$ index.php?p=panel&sp=api [L]
+RewriteRule ^panel/news(/?)+$ index.php?p=panel&sp=news [L]
+RewriteRule ^panel/sales(/([0-9]{1,11}))?(/?)+$ index.php?p=panel&sp=sales&order_id=$2 [L]
+RewriteRule ^panel/hiddenproducts(/?)(/([0-9]{1,11})(/?))?+$ index.php?p=panel&sp=hiddenproducts&user_id=$3 [L]
+
+RewriteRule ^merchant(/.*)?$ index.php?p=merchant [L]
+
+RewriteRule ^panel/partner(/([a-z]{1,16}))?(/([0-9]{1,11}))?(/?)+$ index.php?p=panel&sp=partner&a=$2&id=$4 [L]
+
+RewriteRule ^panel/messageview(/([0-9]{1,11}))?(/?)+$ index.php?p=panel&sp=messageview&id=$2 [L]
+
+RewriteRule ^panel/messages(/([0-9]{1,11}))?(/?)+$ index.php?p=panel&sp=messages&to=$2 [L]
+RewriteRule ^panel/messages/view(/([0-9]{1,11}))??(/?)+$ index.php?p=panel&sp=messages&method=view&id=$2 [L]
+
+RewriteRule ^panel/promocodes(/(add))?(/?)+$ index.php?p=panel&sp=promocodes&a=$2 [L]
+RewriteRule ^panel/promocodes/edit/([0-9]{1,11})(/?)+$ index.php?p=panel&sp=promocodes&a=edit&id=$1 [L]
+
+RewriteRule ^ajax/([a-zA-Z]{1,16})/([a-zA-Z]{1,24})(/(user))?(/?)+$ ajax.php?module=$1&method=$2&user=$4 [L]
+
+RewriteRule ^primepay(/?)+$ modules/pages/primepay.html [L]
+RewriteRule ^primeshop(/?)+$ modules/pages/primeshop.html [L]
+RewriteRule ^bitcoin-promo(/?)+$ modules/pages/bitcoin-promo.html [L]
+
+RewriteRule ^([a-z0-9-]{1,16})(/?)+$ index.php?p=$1 [L]
+
+RewriteRule ^partcode/([0-9]{1,11})(/?)+$ index.php?p=partcode&productid=$1 [L]

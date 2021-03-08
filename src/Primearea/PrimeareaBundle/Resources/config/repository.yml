@@ -1,0 +1,29 @@
+services:
+    primearea.repository.mail:
+        class: Primearea\PrimeareaBundle\Repository\MailRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea.repository.cashout:
+        class: Primearea\PrimeareaBundle\Repository\CashoutRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea.repository.user:
+        class: Primearea\PrimeareaBundle\Repository\UserRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea.repository.metric:
+        class: Primearea\PrimeareaBundle\Repository\MetricRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea.repository.payment_account:
+        class: Primearea\PrimeareaBundle\Repository\PaymentAccountRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea.repository.yandex_output:
+        class: Primearea\PrimeareaBundle\Repository\YandexOutputRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea.repository.webmoney_output:
+        class: Primearea\PrimeareaBundle\Repository\WebmoneyOutputRepository
+        arguments:
+            - '@well.db.client.default'

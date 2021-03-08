@@ -1,0 +1,1 @@
+ALTER TABLE `mpayments` ADD `curr` tinyint(2) UNSIGNED NOT NULL DEFAULT '4' AFTER `amountPay`;

@@ -1,0 +1,8 @@
+primearea.metric:
+    path: /{id}/{relateId}
+    defaults:
+        _controller: primearea.controller.metric:create
+    requirements:
+        id: \d+
+        relateId: \d+
+    methods: [GET]

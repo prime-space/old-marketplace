@@ -1,0 +1,771 @@
+.persale {
+    color: #2ecc71;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.selectvia {
+    color: #7f7f7f;
+    font-size: 16px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-weight: 700;
+    width: 100%;
+}
+
+.imgoplata {
+    display: block;
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 990px) {
+    .imgoplata div {
+        width: 23%;
+        margin: 0.7%;
+    }
+}
+
+.imgoplata a > div {
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    padding: 15px 0px;
+    display: inline-block;
+    /* margin-right: 20px; */
+}
+
+.test {
+    background-image: url('/style/merchant/img/wmicon/test.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.test:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .test {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .test:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.yandexmoney {
+    background-image: url('/style/img/pay_method/yandex641.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.yandexmoney:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .yandexmoney {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .yandexmoney:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wmz {
+    background-image: url('/style/merchant/img/wmicon/wmz.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.wmz:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .wmz {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .wmz:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wmr {
+    background-image: url('/style/merchant/img/wmicon/wmr.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.wmr:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .wmr {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .wmr:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wmu {
+    background-image: url('/style/merchant/img/wmicon/wmu.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.wmu:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .wmu {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .wmu:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wme {
+    background-image: url('/style/merchant/img/wmicon/wme.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.wme:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .wme {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .wme:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.liqpay {
+    background-image: url('/style/merchant/img/liqpay_logo.png');
+}
+
+.liqpay:hover {
+    background-image: url('/style/merchant/img/liqpay_logo_hover.png');
+}
+
+.selected .liqpay {
+    background-image: url('/style/merchant/img/liqpay_logo_hover.png');
+}
+
+.qiwi, .qiwi_ik {
+    background-image: url('/style/img/pay_method/qiwi641.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.qiwi:hover, .qiwi_ik:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .qiwi, .selected .qiwi_ik {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .qiwi:before, .selected .qiwi_ik:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.qiwiown {
+    background-image: url('/style/merchant/img/qiwi.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.qiwiown:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .qiwiown {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .qiwiown:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mts {
+    background-image: url('/style/img/pay_method/mts64.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.mts:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .mts {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .mts:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.megafon {
+    background-image: url('/style/img/pay_method/megafon641.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.megafon:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .megafon {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .megafon:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.beeline {
+    background-image: url('/style/img/pay_method/beeline36.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.beeline:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .beeline {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .beeline:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.tele2 {
+    background-image: url('/style/img/pay_method/tele236.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.tele2:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .tele2 {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .tele2:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.worldcard {
+    background-image: url(/style/img/pay_method/cardw.png);
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 50%;
+}
+
+.worldcard:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .worldcard {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .worldcard:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cardpay, .cards {
+    background-image: url('/style/img/pay_method/credit6412.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.cardpay:hover, .cards:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .cardpay, .selected .cards {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .cardpay:before, .selected .cards:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.paypal {
+    background-image: url('/style/merchant/img/paypal.png');
+}
+
+.paypal:hover {
+    background-image: url('/style/merchant/img/paypalhover.png');
+}
+
+.selected .paypal {
+    background-image: url('/style/merchant/img/paypalhover.png');
+}
+
+.Payeer {
+    background-image: url('/style/img/pay_method/payeer.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.Payeer:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .Payeer {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .Payeer:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.OKPay {
+    background-image: url('/style/merchant/img/okpay.png');
+}
+
+.OKPay:hover {
+    background-image: url('/style/merchant/img/okpayhover.png');
+}
+
+.selected .OKPay {
+    background-image: url('/style/merchant/img/okpayhover.png');
+}
+
+.bitcoin {
+    background-image: url('/style/merchant/img/bitcoin.png');
+}
+
+.bitcoin:hover {
+    background-image: url('/style/merchant/img/bitcoinhover.png');
+}
+
+.selected .bitcoin {
+    background-image: url('/style/merchant/img/bitcoinhover.png');
+}
+
+.advcash {
+    background-image: url('/style/img/pay_method/advcash.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+.advcash:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .advcash {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .advcash:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.skrill {
+    background-image: url('/style/merchant/img/skrill.png');
+}
+
+.skrill:hover, .selected .skrill {
+    background-image: url('/style/merchant/img/skrillHover.png');
+}
+
+.cardw {
+    background-image: url('/style/img/pay_method/cardw.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-size: 90%;
+}
+
+.cardw:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .cardw {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .cardw:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.privat {
+    background-image: url('/style/img/pay_method/privat.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-size: 90%;
+}
+
+.privat:hover {
+    background-color: #e5e5e5;
+    border-color: #fafafa;
+}
+
+.selected .privat {
+    background-color: #f5fff9;
+    border-color: #2ecc71;
+}
+
+.selected .privat:before {
+    content: "\f058";
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    color: #2ecc71;
+    background-color: #fff;
+    border-radius: 50%;
+    font: normal normal normal 25px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.redirecttopay {
+    color: #77767d;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+#popup.popup_merchant {
+    display: none;
+}
+
+.payment-button-proceedm {
+    background-color: #2ecc71;
+    padding: 15px 140px 15px 140px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    font-family: "RobotoMedium";
+    cursor: pointer;
+    border: 0;
+}
+
+@media screen and (min-width: 310px) and (max-width: 340px) {
+    .imgoplata a > div {
+        width: 110px;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 350px) {
+    .imgoplata a > div {
+        width: 120px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 378px) {
+    .imgoplata a > div {
+        width: 130px;
+    }
+}
+
+@media screen and (min-width: 378px) and (max-width: 414px) {
+    .imgoplata a > div {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 469px) {
+    .imgoplata a > div {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .payment-button-decline {
+        display: none;
+    }
+
+    .payment-button-proceedm {
+        background-color: #2ecc71;
+        padding: 15px 60px 15px 60px;
+        border-radius: 3px;
+        font-size: 16px;
+        color: #fff;
+        font-family: "RobotoMedium";
+        cursor: pointer;
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .oplata-block {
+        margin-top: 10px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .wme, .wmz, .wmr, .wmu, .yandexmoney, .qiwi, .qiwiown, .mts, .beeline, .megafon, .tele2, .cardpay, .advcash, .Payeer, .cardw, .privat {
+        background-size: 90%;
+    }
+}
+
+@media screen and (min-width: 757px) and (max-width: 991px) {
+    .imgoplata a > div {
+        padding: 0;
+        height: 80px;
+        width: 29.333333333%;
+        margin: 1.6%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 500px) {
+    .imgoplata a > div {
+        width: 29.333333%;
+        margin: 1.333333%;
+        background-size: 90%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .imgoplata a > div {
+        width: 43.333333%;
+        margin: 2.333333%;
+        height: auto;
+        padding: 40px 0;
+        background-size: 90%;
+    }
+}

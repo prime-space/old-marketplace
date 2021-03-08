@@ -1,0 +1,14 @@
+services:
+    mailer.postman:
+        class: Primearea\MailerBundle\Postman
+        arguments:
+            - '%mailer.host%'
+            - '%mailer.port%'
+            - '%mailer.secure%'
+            - '%mailer.user%'
+            - '%mailer.pass%'
+            - '%mailer.smtp_auth%'
+            - '%mailer.sender.email%'
+            - '%mailer.sender.name%'
+            - '%kernel.project_dir%'
+            - '@logger'

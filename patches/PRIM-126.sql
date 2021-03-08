@@ -1,0 +1,2 @@
+ALTER TABLE `user`
+  ADD COLUMN `emailInforming` TINYINT(3) UNSIGNED NOT NULL DEFAULT '1' AFTER `picture`;

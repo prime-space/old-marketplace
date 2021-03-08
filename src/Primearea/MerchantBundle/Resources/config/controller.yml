@@ -1,0 +1,5 @@
+services:
+    primearea_merchant.payment_controller:
+        class: Primearea\MerchantBundle\Controller\PaymentController
+        arguments:
+            - '@primearea_merchant.repository.payment'

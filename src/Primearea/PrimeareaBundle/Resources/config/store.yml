@@ -1,0 +1,5 @@
+services:
+    primearea.store.mail:
+        class: Primearea\PrimeareaBundle\Store\MailStore
+        arguments:
+            - '@well.db.client.default'

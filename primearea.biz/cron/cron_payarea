@@ -1,0 +1,11 @@
+SHELL=/bin/bash
+MAILTO=""
+6 22 * * * /usr/bin/php -f /var/www/primearea/primearea.biz/command/reportCounter.php;
+0 * * * * /bin/sleep 15; /usr/bin/wget -O - -q -t 1 https://payarea24.com/cron/hour.php;
+1 0 * * * /usr/bin/wget -O - -q -t 1 https://payarea24.com/cron/sitemap.php;
+5 22 * * * /usr/bin/wget -O - -q -t 1 https://payarea24.com/cron/day.php;
+* * * * * /usr/bin/wget -O - -q -t 1 https://payarea24.com/cron/10_sec.php; /bin/sleep 10; /usr/bin/wget -O - -q   -t 1 https://payarea24.com/cron/10_sec.php; /bin/sleep 10; /usr/bin/wget -O - -q -t 1     https://payarea24.com/cron/10_sec.php; /bin/sleep 10; /usr/bin/wget -O - -q -t 1   https://payarea24.com/cron/10_sec.php; /bin/sleep 10; /usr/bin/wget -O - -q -t 1     https://payarea24.com/cron/10_sec.php; /bin/sleep 10; /usr/bin/wget -O - -q -t 1   https://payarea24.com/cron/10_sec.php;
+* * * * * /usr/bin/wget -O - -q -t 1 https://payarea24.com/cron/min.php;
+*/5 * * * * /usr/bin/wget -O - -q -t 1 https://payarea24.com/cron/5_min.php;
+* * * * * /usr/bin/wget -O - -q -t 1 https://payarea24.com/cron/wmx2.php; /bin/sleep 10; /usr/bin/wget -O - -q   -t 1 https://payarea24.com/cron/wmx2.php; /bin/sleep 10; /usr/bin/wget -O - -q -t 1     https://payarea24.com/cron/wmx2.php; /bin/sleep 10; /usr/bin/wget -O - -q -t 1   https://payarea24.com/cron/wmx2.php; /bin/sleep 10; /usr/bin/wget -O - -q -t 1     https://payarea24.com/cron/wmx2.php; /bin/sleep 10; /usr/bin/wget -O - -q -t 1   https://payarea24.com/cron/wmx2.php;
+* * * * * /usr/local/bin/php /var/www/primearea/bin/console primearea:fetch-payout-statuses --no-debug --env=prod

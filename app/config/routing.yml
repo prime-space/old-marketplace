@@ -1,0 +1,12 @@
+primearea_merchant:
+    resource: '@MerchantBundle/Resources/config/routing.yml'
+    prefix: /merchant
+primearea:
+    resource: '@PrimeareaBundle/Resources/config/routing.yml'
+    prefix: /metric
+
+primearea.admin_api:
+    path: /adminApi/{method}
+    defaults:
+        _controller: primearea.controller.admin_api:action
+    methods: [POST]

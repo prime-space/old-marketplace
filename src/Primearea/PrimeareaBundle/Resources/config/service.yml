@@ -1,0 +1,32 @@
+services:
+
+    primearea.port:
+        class: Primearea\PrimeareaBundle\Port
+        arguments:
+            - '%primearea.app_path%'
+            - '@logger'
+
+    primearea.transaction.executor_provider:
+        class: Primearea\PrimeareaBundle\Transaction\ExecutorProvider
+
+    primearea.message_broker:
+        class: Primearea\PrimeareaBundle\MessageBroker
+        arguments:
+            - '@well.db.client.queue'
+
+    primearea.admin_api:
+        class: Primearea\PrimeareaBundle\AdminApi
+        arguments:
+            - '@primearea.repository.payment_account'
+
+    primearea.payment_account_fetcher:
+        class: Primearea\PrimeareaBundle\PaymentAccountFetcher
+        arguments:
+            - '@primearea.repository.payment_account'
+
+    primearea.addmoney_executor:
+        class: Primearea\PrimeareaBundle\AddMoneyExecutor
+        arguments:
+            - '@primearea.port'
+        tags:
+            - {name: transaction_executor, type: addmoney}

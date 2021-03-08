@@ -1,0 +1,2 @@
+ALTER TABLE `product` ADD `hidden` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'forcing hide' AFTER `showing`;
+INSERT INTO `panel` (`name`, `url`, `right`, `sort`) VALUES ('Скрытие товаров', '/panel/hiddenproducts/', 'moder,admin', NULL);

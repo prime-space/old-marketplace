@@ -1,0 +1,17 @@
+services:
+    primearea_merchant.repository.payment:
+        class: Primearea\MerchantBundle\Repository\PaymentRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea_merchant.repository.qiwi_input:
+        class: Primearea\MerchantBundle\Repository\QiwiInputRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea_merchant.repository.qiwi_output:
+        class: Primearea\MerchantBundle\Repository\QiwiOutputRepository
+        arguments:
+            - '@well.db.client.default'
+    primearea_merchant.repository.transaction:
+        class: Primearea\MerchantBundle\Repository\TransactionRepository
+        arguments:
+            - '@well.db.client.default'

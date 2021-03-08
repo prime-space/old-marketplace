@@ -1,0 +1,6 @@
+primearea_merchant.check_payment:
+    path: /check-payment/{id}
+    defaults:
+        _controller: primearea_merchant.payment_controller:checkPaymentAction
+    requirements:
+        id: \d+

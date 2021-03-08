@@ -1,0 +1,5 @@
+services:
+    primearea_order.repository.order:
+        class: Primearea\OrderBundle\Repository\OrderRepository
+        arguments:
+            - '@well.db.client.default'
